@@ -24,7 +24,7 @@ A quick way to get started is with Vagrant and VirtualBox.
 
 ### Requirements
 
-- [Ansible](http://docs.ansible.com/intro_installation.html)
+- [Ansible v.1.9.4](http://docs.ansible.com/intro_installation.html)
 - [Vagrant](http://www.vagrantup.com/downloads.html)
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
