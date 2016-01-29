@@ -20,7 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Shared folder from the host machine to the guest machine. Uncomment the line
   # below to enable it.
-  config.vm.synced_folder "../vida", "/vida", mount_options: ["dmode=777,fmode=777"]
+  config.vm.synced_folder "../flintlock", "/vida", mount_options: ["dmode=777,fmode=777"]
 
   # Ansible provisioner.
   config.vm.provision "ansible" do |ansible|
