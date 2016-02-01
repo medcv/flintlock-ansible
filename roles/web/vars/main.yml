@@ -57,3 +57,9 @@ django_environment:
   EMAIL_PORT: "{{ email_port }}"
   SERVER_EMAIL: "{{ server_email }}"
   DEFAULT_FROM_EMAIL: "{{ default_from_email }}"
+  SOCIAL_AUTH_GOOGLE_OAUTH2_KEY: "{{ social_auth_google_oauth2_key }}"
+  SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET: "{{ social_auth_google_oauth2_secret }}"
+  REQUESTS_CA_BUNDLE: "{{virtualenv_path}}/lib/python2.7/site-packages/httplib2/cacerts.txt"
+
+
+
