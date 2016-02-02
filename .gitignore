@@ -1,7 +1,5 @@
 .idea
 .vagrant
 vagrant_ansible_inventory_default
-env_vars/production.yml
 production.yml
-production-playbook.yml
 production
