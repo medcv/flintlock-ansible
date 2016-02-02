@@ -24,7 +24,7 @@ server {
     }
 
     location /static/ {
-        {% if ansible_eth1 and ansible_eth1.ipv4.address == '192.168.33.15' %}
+        {% if ansible_eth1 is defined and ansible_eth1.ipv4.address == '192.168.33.15' %}
         sendfile        off;
         {% endif %}
         alias   {{ nginx_static_dir }};
@@ -32,6 +32,12 @@ server {
 
     location /media/ {
         alias   {{ nginx_media_dir }};
+    }
+    
+    location /fileservice_store_internal/ {
+        # forces requests to be authorized
+        internal;
+        alias   /webapps/vida/fileservice_store/;
     }
 
     location / {
