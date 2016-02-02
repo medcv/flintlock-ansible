@@ -24,7 +24,7 @@ server {
     }
 
     location /static/ {
-        {% if ansible_eth1 and ansible_eth1.ipv4.address == '192.168.33.15' %}
+        {% if ansible_eth1 is defined and ansible_eth1.ipv4.address == '192.168.33.15' %}
         sendfile        off;
         {% endif %}
         alias   {{ nginx_static_dir }};

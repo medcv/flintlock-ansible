@@ -36,6 +36,7 @@ django_environment:
   EMAIL_HOST_PASSWORD: "{{ email_host_password|default(omit) }}"
   BROKER_URL: "{{ broker_url|default(omit) }}"
   AWS_STORAGE_BUCKET_NAME: "{{ aws_storage_bucket_name|default(omit) }}"
+  COMPRESS_URL: "{{ compress_url|default(omit) }}"
   AWS_ACCESS_KEY_ID: "{{ aws_access_key_id|default(omit) }}"
   AWS_SECRET_ACCESS_KEY: "{{ aws_secret_access_key|default(omit) }}"
   MAPBOX_ACCESS_TOKEN: "{{ mapbox_access_token|default(omit) }}"
@@ -45,12 +46,7 @@ django_environment:
   DATABASE_PASSWORD: "{{ database_password }}"
   DATABASE_HOST: "{{ database_host }}"
   DATABASE_PORT: "{{ database_port }}"
-  NFIRS_DATABASE_NAME: "{{ nfirs_database_name }}"
-  NFIRS_DATABASE_USER: "{{ nfirs_database_user }}"
-  NFIRS_DATABASE_PASSWORD: "{{ nfirs_database_password }}"
-  NFIRS_DATABASE_HOST: "{{ nfirs_database_host }}"
-  NFIRS_DATABASE_PORT: "{{ nfirs_database_port }}"
-  MEMCACHE_LOCATION: "{{ memcache_location }}"
+  #MEMCACHE_LOCATION: "{{ memcache_location }}"
   EMAIL_HOST: "{{ email_host }}"
   EMAIL_HOST_PASSWORD: "{{ email_host_password }}"
   EMAIL_HOST_USER: "{{ email_host_user }}"
@@ -60,6 +56,8 @@ django_environment:
   SOCIAL_AUTH_GOOGLE_OAUTH2_KEY: "{{ social_auth_google_oauth2_key }}"
   SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET: "{{ social_auth_google_oauth2_secret }}"
   REQUESTS_CA_BUNDLE: "{{virtualenv_path}}/lib/python2.7/site-packages/httplib2/cacerts.txt"
+
+
 
 
 
