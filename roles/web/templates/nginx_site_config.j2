@@ -33,6 +33,12 @@ server {
     location /media/ {
         alias   {{ nginx_media_dir }};
     }
+    
+    location /fileservice_store_internal/ {
+        # forces requests to be authorized
+        internal;
+        alias   /webapps/vida/fileservice_store/;
+    }
 
     location / {
         if (-f {{ virtualenv_path }}/maintenance_on.html) {
