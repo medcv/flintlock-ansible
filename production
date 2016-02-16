@@ -2,7 +2,7 @@
 env=production
 
 [webservers]
-# ip here
+# add ip here
 
 [webservers:vars]
 ansible_ssh_user=ubuntu
