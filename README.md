@@ -32,6 +32,13 @@ A quick way to get started is with Vagrant and VirtualBox.
 git clone https://github.com/ROGUE-JCTD/vida-ansible.git
 git clone https://github.com/ROGUE-JCTD/vida.git
 cd vida-ansible
+```
+
+follow steps to configure google auth by going to this private prominentedge doc:
+https://docs.google.com/document/d/1medeN3yA9Bwu9JqxQVoqCY80RbiLucrO7yrcZY6ypfE
+
+then run
+```
 vagrant up
 ```
 
